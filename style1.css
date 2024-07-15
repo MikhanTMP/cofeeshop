@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-bar {
+    background-color: rgb(16 16 16);
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    box-shadow: 15px 25px 32px -25px rgba(0, 0, 0, 0.87);
+    -webkit-box-shadow: 15px 25px 32px -25px rgba(0, 0, 0, 0.87);
+    -moz-box-shadow: 15px 25px 32px -25px rgba(0, 0, 0, 0.87);
+
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-transform: none;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+.logo-cont {
+    background-color: rgb(16 16 16);
+    border-radius: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    position: absolute;
+    padding: 10px;
+}
+
+.cont-parent {
+    display: flex;
+    justify-content: center;
+}
+
+.side {
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.side a {
+    background: beige;
+    color: #fafafa;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+    padding: 12px;
+    text-decoration: none;
+    margin: 8px 0;
+    border-radius: 6px;
+    margin-left: -160px;
+    transition: 0.5s all;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.side a:hover {
+    margin-left: 0;
+    text-decoration: none;
+    color: #ffffff;
+    /*---White---*/
+}
+
+#icon {
+    width: 25px;
+}
+
+.top-icon {
+    transition: transform 300ms ease-out;
+}
+
+.top-icon:hover {
+    transform: translate(0px, 0px) scale(1.3, 1.3);
+}
+
+.home img {
+    width: 100%;
+    object-fit: cover;
+    height: 80vh;
+
+}
+
+.landing {
+    background-image: url("/images/coffee-5885033_1920.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.land-cont {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.land-cont h1 {
+    margin: 0;
+    color: #F1DEC9;
+    text-shadow: 2px 7px 4px rgba(0, 0, 0, 0.6);
+    font-family: 'Great Vibes', cursive;
+    font-size: 5rem;
+}
+
+.land-cont p {
+    width: 72vh;
+    color: #F1DEC9;
+    text-shadow: 6px 1px 8px rgba(0, 0, 0, 0.92);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 5px;
+}
+
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #f0ce54;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border: none;
+    text-decoration: none;
+    width: 30vh;
+    text-align: center;
+}
+
+.btn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #FFD401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+}
+
+.btn:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+.btn span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #2F2F2F;
+    font-size: .90em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.about {
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: antiquewhite;
+}
+
+.about-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    gap: 50px;
+}
+
+.about-card {
+
+    width: 90vh;
+    height: 50vh;
+    overflow-y: hidden;
+}
+
+.about-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #93827F;
+    font-weight: bold;
+    margin: 0;
+}
+
+.about-card h2 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+.about-card p {
+    font-family: 'Noto Sans Ethiopic', sans-serif;
+    color: #867070;
+    text-align: justify;
+}
+
+#about-pic {
+    width: 70vh;
+
+}
+
+.divider {
+    background-color: #685b5b;
+    margin: 0;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+
+.img-div {
+    background-image: url("/images/cafe-7454951_1920.jpg");
+    height: 65vh;
+    width: 33%;
+    background-size: cover;
+}
+
+.img-div-2 {
+    background-image: url("/images/cafe-5635015_1920.jpg");
+    height: 65vh;
+    width: 34%;
+    background-size: cover;
+}
+
+.img-div-3 {
+    background-image: url("/images/coffee-1281750_1920.jpg");
+    height: 65vh;
+    width: 34%;
+    background-size: cover;
+}
+
+.more-info {
+    height: 90vh;
+    overflow-y: hidden;
+}
+
+.more-cont {
+    height: 90vh;
+
+}
+
+.info {
+    display: flex;
+    margin: 0;
+}
+
+.left {
+    width: 50%;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 2.5rem;
+    justify-content: right;
+    display: flex;
+    align-items: center;
+}
+
+.left p {
+    width: 71vh;
+    color: #928282;
+    text-align: justify;
+}
+
+.right {
+    width: 50%;
+    height: 90vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+
+.right-content {
+    height: 400vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee {
+    height: 100vh;
+    background-image: url("/images/Espresso-PNG-Free-Download.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 95vh;
+    margin: 0 auto;
+}
+
+.coffee h2,
+.sandwiches h2,
+.snacks h2,
+.performances h2 {
+    text-align: center;
+    font-family: 'Solitreo', cursive;
+    color: #444739;
+    font-size: 3rem;
+    margin: 0;
+    padding: 15px;
+}
+
+.sandwiches {
+    height: 100vh;
+    background-image: url("/images/—Pngtree—fresh\ food\ sandwich_6241034.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 95vh;
+    margin: 0 auto;
+}
+
+.snacks {
+    height: 100vh;
+    background-image: url("/images/Energy+Ball_Cranberry.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    width: 95vh;
+    margin: 0 auto;
+}
+
+.performances {
+    height: 100vh;
+    background-image: url("/images/Lovepik_com-401617790-golden-microphone.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    width: 95vh;
+    margin: 0 auto;
+}
+
+.menu-sect {
+    background-color: #2F2F2F;
+    margin: 0;
+    width: 100%;
+    height: 235vh;
+    overflow-y: hidden;
+
+}
+
+.menu-cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.menu h1 {
+    margin: 0;
+    color: #F3F9D2;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 15px;
+    font-family: 'Great Vibes', cursive;
+
+}
+
+.menu hr {
+    width: 25%;
+}
+
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #93827F;
+    color: #F3F9D2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 80px;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item-img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.menu-item-text {
+    flex-grow: 1;
+    color: #a2a694;
+    text-align: justify;
+
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item-name {
+    margin-right: 1.5em;
+    color: #e1e898;
+    font-family: 'Noto Sans Ethiopic';
+}
+
+.menu-item-price {
+    color: #eceede;
+    font-family: 'Noto Sans Ethiopic';
+}
+
+.menu-item-desc {
+    line-height: 1.6;
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    .menu-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-item-img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+.music-sect{
+    height: 40vh;
+    overflow-y: hidden;
+}
+.music-cont{
+    height: 40vh;
+    background-image: url("/images/pexels-huỳnh-đạt-3262277.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.audio-control{
+    display: flex;
+    width: 100%;
+    justify-content:space-between ;
+    align-items: center;
+}
+.left-arrow{
+    padding-left: 70px;
+    cursor: pointer;
+}
+.right-arrow{
+    padding-right: 70px;
+    cursor: pointer;
+}
+.play-pause{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+.play-pause img{
+    width: 40px;
+}
+.music-text p{
+    margin: 0;
+    color: rgb(239, 237, 131);;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    text-shadow: 5px 1px 6px rgba(0,0,0,0.68);
+}
+.music-text h1{
+    color: rgb(250, 250, 198);
+    text-align: center;
+    width: 100%;
+    text-shadow: 5px 1px 10px rgba(0,0,0,0.51);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+.music-text h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: rgb(227, 204, 23);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    text-shadow: 5px 1px 6px rgba(0,0,0,0.68);
+}
+
+
+.job{
+    height: 80vh;
+}
+
+
+.job-cont {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #212121;
+    height: 80vh;
+    align-items: center;
+}
+.job-cont h1{
+    color: #e1e898;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    font-family: "Noto Sans Ethiopic";
+    height: 45vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .content .heading {
+    font-weight: 700;
+    font-size: 32px;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .content .para {
+    line-height: 1.5;
+    z-index: 1;
+  }
+  
+  .content .btn-btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    z-index: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card:hover::before {
+    height: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: none;
+  }
+  
+  .card:hover .btn-btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .content .btn-btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+  }
+  
+  .content .btn-btn:active {
+    box-shadow: none;
+  }
+  
+  footer {
+    background-color: black;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif;
+    padding: 45px 0 185px 0;
+}
+
+.footer-inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    max-width: 1170px;
+    position: relative;
+}
+
+.footer-item {
+    float: left;
+    margin: 0 7.2% 0 0;
+}
+
+.footer-item:nth-of-type(4) {
+    display: none;
+}
+
+.footer-item:nth-of-type(7) {
+    float: right;
+    margin-right: 0;
+}
+
+.footer-button {
+    color: white;
+    position: relative;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 1s;
+    transition-delay: .2s;
+    padding: 14px;
+}
+  
+.footer-button:after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: 13px;
+    background-color: white;
+    height: 1px;
+    width: 86px;
+    transition: .6s;
+}
+  
+.footer-button:hover {
+    color: black;
+    background-color: white;
+}
+  
+.footer-button:hover:after {
+    width: 112px;
+    right: 0px;
+}
+
+.footer-inner h1 {
+    font-weight: 900;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+  
+.footer-inner h2 {
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 13px;
+    color: #d1d1d1;
+    letter-spacing: 0.03em;
+    padding: 15px 0 0 0;
+}
+  
+.color {
+    color: white;
+    font-weight: 400;
+}
+  
+.footer-inner h3 {
+    font-weight: 400;
+    font-size: 13px;
+    color: white;
+    margin: 0;
+    padding-bottom: 9px;
+    letter-spacing: 0.03em;
+}
+
+.footer-item h3.desktop {
+    padding-top: 30px;
+}
+  
+ul {
+    line-height: 1.8;
+    list-style-type: none;
+    padding: 0;
+}
+  
+li {
+    font-weight: 300;
+    font-size: 13px;
+    color: #d1d1d1;
+    letter-spacing: 0.03em;
+}
+  
+.footer-inner p {
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+}
+  
+.footer-inner a {
+    text-decoration: none;
+    color: #d1d1d1;
+}
+  
+a:hover {
+    color: white;
+}
+  
+.desktop {
+    display: auto;
+}
+
+.footer-inner:after {
+    content: "© 2023 Sip & Savor Café | All Rights Reserved.";
+    font-weight: 300;
+    letter-spacing: 0.03em;
+    font-size: 13px;
+    color: #d1d1d1;
+    position: absolute;
+    top: 260px;
+    clear: both;
+    display: block;
+}
