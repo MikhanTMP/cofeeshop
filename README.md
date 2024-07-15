@@ -42,9 +42,10 @@ To run this project locally, follow these steps:
 
 Once you have opened `index.html`, you can navigate through the website using the provided links. The website includes the following sections:
 
-- **Home**: Introduction and welcome message.
-- **Menu**: Displays various coffee options available at the coffee shop.
-- **Contact**: Contains a form to get in touch with the coffee shop.
+- **Landing Page**
+- **About Page**
+- **Feature Page**
+- **Menu Page** 
 
 ## Contributing
 
@@ -77,5 +78,3 @@ If you have any questions or feedback, feel free to reach out:
 
 Enjoy your coffee! ☕
 ```
-
-Make sure to adjust the repository link, GitHub username, and any other relevant information as needed. If you have a specific license file or any additional files, ensure they are included in your repository.
