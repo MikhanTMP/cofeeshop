@@ -109,7 +109,7 @@ body {
 }
 
 .landing {
-    background-image: url("/images/coffee-5885033_1920.jpg");
+    background-image: url("images/coffee-5885033_1920.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 85vh;
@@ -265,21 +265,21 @@ body {
 }
 
 .img-div {
-    background-image: url("/images/cafe-7454951_1920.jpg");
+    background-image: url("images/cafe-7454951_1920.jpg");
     height: 65vh;
     width: 33%;
     background-size: cover;
 }
 
 .img-div-2 {
-    background-image: url("/images/cafe-5635015_1920.jpg");
+    background-image: url("images/cafe-5635015_1920.jpg");
     height: 65vh;
     width: 34%;
     background-size: cover;
 }
 
 .img-div-3 {
-    background-image: url("/images/coffee-1281750_1920.jpg");
+    background-image: url("images/coffee-1281750_1920.jpg");
     height: 65vh;
     width: 34%;
     background-size: cover;
@@ -342,7 +342,7 @@ body {
 
 .coffee {
     height: 100vh;
-    background-image: url("/images/Espresso-PNG-Free-Download.png");
+    background-image: url("images/Espresso-PNG-Free-Download.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -364,7 +364,7 @@ body {
 
 .sandwiches {
     height: 100vh;
-    background-image: url("/images/—Pngtree—fresh\ food\ sandwich_6241034.png");
+    background-image: url("images/—Pngtree—fresh\ food\ sandwich_6241034.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -375,7 +375,7 @@ body {
 
 .snacks {
     height: 100vh;
-    background-image: url("/images/Energy+Ball_Cranberry.png");
+    background-image: url("images/Energy+Ball_Cranberry.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -386,7 +386,7 @@ body {
 
 .performances {
     height: 100vh;
-    background-image: url("/images/Lovepik_com-401617790-golden-microphone.png");
+    background-image: url("images/Lovepik_com-401617790-golden-microphone.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -501,7 +501,7 @@ body {
 }
 .music-cont{
     height: 40vh;
-    background-image: url("/images/pexels-huỳnh-đạt-3262277.jpg");
+    background-image: url("images/pexels-huỳnh-đạt-3262277.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
